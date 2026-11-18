@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153e38">
+  <meta name="description" content="Documentação - projeto Animalec">
+  <title>Animalec | Documentação</title>
+  <link rel="stylesheet" href="css/docs.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+  <header class="site-header"><div class="head-inner"><a class="brand" href="index.html">✺ animalec<span>.</span></a><nav class="head-nav" aria-label="Menu principal"><a href="index.html">Página principal</a><a href="docs.html" aria-current="page">Documentação</a><a href="testes.html">Testes</a><a href="design/galeria.html">Desenhos</a><a class="admin-button" href="admin.html">Administração</a></nav></div></header>
+  <section class="page-intro" aria-labelledby="title"><div class="inner"><p class="kicker">Tarefa 3.1b · Animalec</p><h1 id="title">Documentação</h1><p>Planeamento, decisões de interface e organização das novas entidades do Animalec.</p></div></section>
+  <main class="site-main" id="conteudo">
+  <section class="overview"><strong>Documentação do projeto</strong><p>Organização das entidades Patrocinadores e Especialistas, estrutura do back-office e relação com os capítulos A.2 e A.3 do livro.</p></section>
+  <div class="tile-grid">
+    <article class="tile"><h2>Planeamento</h2><p>Campos, navegação, wireframes e mockups.</p><a href="#planeamento">Ler planeamento</a></article>
+    <article class="tile"><h2>Relação com o livro</h2><p>Organização das páginas principal e de administração.</p><a href="#livro">Ler comparação</a></article>
+    <article class="tile"><h2>Desenhos</h2><p>Wireframes e mockups de computador e telemóvel.</p><a href="design/galeria.html">Abrir galeria</a></article>
+  </div>
+  <section id="planeamento" class="content-card" aria-label="Planeamento e justificação"><div class="section-top"><span></span><a class="small-link" href="docs/Planeamento_e_Justificacao.md">Ver ficheiro original</a></div><h1>Planeamento das novas entidades</h1>
+<h2>Objetivo</h2>
+<p>A tarefa consiste em acrescentar <strong>sponsors</strong> e <strong>experts</strong> à administração do Animalec, com base nas áreas de gestão apresentadas no capítulo A.3 do livro.</p>
+<h2>Patrocinadores</h2>
+<p>Cada patrocinador tem nome, área de atuação, pessoa de contacto, email, tipo de apoio, estado e lista de animais associados. Estes campos permitem identificar quem presta apoio e a que espécies esse apoio está ligado.</p>
+<h2>Especialistas científicos</h2>
+<p>Para cada especialista são registados o nome, a especialização, a instituição, o email, o estado e os animais estudados. Deste modo, é possível associar conhecimento científico às espécies.</p>
+<h2>Wireframes e mockups</h2>
+<p>Foram criados quatro wireframes e quatro mockups, com versões para computador e telemóvel. Primeiro defini a distribuição dos menus, listas e formulários. Depois escolhi as cores, os espaçamentos e os elementos gráficos. No computador a listagem é apresentada numa tabela; no telemóvel são usados cartões para facilitar a leitura.</p>
+<h2>Navegação</h2>
+<p>A administração mantém as áreas Animais, Utilizadores, Quizzes e Questões e acrescenta Patrocinadores e Especialistas. Nas duas novas áreas é possível ver, adicionar, editar, eliminar e procurar registos.</p>
+<h2>HTML5</h2>
+<p>A estrutura utiliza <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>form</code>, <code>label</code>, <code>table</code> e <code>footer</code>. Os títulos, campos e ações estão identificados e a apresentação ajusta-se à largura do ecrã.</p>
+<h2>Testes</h2>
+<p>Foram verificados o acesso à administração, os menus, a pesquisa, os formulários e a apresentação para dispositivos móveis. Os resultados estão no ficheiro <code>testes/RESULTADOS.md</code>.</p>
+</section>
+  <section id="livro" class="content-card" aria-label="Relação com o livro"><div class="section-top"><span></span><a class="small-link" href="docs/Correspondencia_com_livro.md">Ver ficheiro original</a></div><h1>Relação com o livro Animalec</h1>
+<p>O capítulo <strong>A.2</strong> apresenta a página principal com navegação, animais, regras, quizzes, contactos e acesso à área de utilizador. Estes elementos estão organizados no ficheiro <code>index.html</code>.</p>
+<p>O capítulo <strong>A.3</strong> apresenta a página de administração do Animalec, que inclui as áreas de Utilizadores, Animais, Quizzes e Questões. O ficheiro <code>admin.html</code> mantém essas quatro áreas e acrescenta dois cartões para Patrocinadores e Especialistas.</p>
+<p>Nas páginas <code>sponsors.html</code> e <code>experts.html</code>, os registos podem ser listados, consultados, adicionados, alterados e eliminados. O menu permite regressar às outras áreas. O aspeto visual é adaptado a computador e telemóvel.</p>
+<p>O livro utiliza componentes Vue e uma API. Neste trabalho foram utilizados HTML5, CSS e JavaScript, com dados guardados no navegador, porque o objetivo da tarefa é desenvolver as interfaces e aplicar os conceitos de wireframe, mockup e protótipo.</p>
+</section>
+  <section class="content-card"><h2>Outros ficheiros</h2><p>Os desenhos estão disponíveis na galeria e podem ser editados no draw.io.</p><a class="side-link" href="design/galeria.html">Galeria dos desenhos</a><a class="side-link" href="design/wireframes-editaveis.drawio">Ficheiro draw.io</a><a class="side-link" href="testes.html">Resultados dos testes</a></section>
+</main>
+  <footer class="foot">Animalec · Programação Web Avançada · <a href="index.html">Página principal</a></footer>
+</body>
+</html>

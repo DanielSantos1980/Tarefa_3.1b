@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Área de administração do Animalec.">
+  <meta name="theme-color" content="#123b37">
+  <title>Animalec | Administração</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar para o conteúdo principal</a>
+
+  <section id="login-view" class="login-view" aria-labelledby="login-title">
+    <div class="login-scene" aria-hidden="true">
+      <span class="orb orb-one"></span><span class="orb orb-two"></span>
+      <div class="scene-badge">🌿 Conhecer · Aprender · Proteger</div>
+      <div class="scene-content">
+        <p class="eyebrow light">PLATAFORMA EDUCATIVA</p>
+        <h2>Um planeta.<br><em>Mil histórias</em> para descobrir.</h2>
+        <p>Uma área de gestão que aproxima animais, parceiros e conhecimento científico.</p>
+        <div class="nature-tiles"><span>🦊</span><span>🦉</span><span>🐬</span></div>
+      </div>
+    </div>
+    <div class="login-panel">
+      <div class="login-inner">
+        <div class="brand brand-login"><span class="brand-symbol" aria-hidden="true">✺</span><span>animalec<span class="brand-dot">.</span></span></div>
+        <p class="eyebrow">ACESSO À ADMINISTRAÇÃO</p>
+        <h1 id="login-title">Bem-vindo de volta</h1>
+        <p class="muted">Introduza os seus dados para entrar na administração.</p>
+        <form id="login-form" class="login-form">
+          <div class="field"><label for="login-email">Endereço de email</label><input id="login-email" type="email" autocomplete="username" required placeholder="admin@animalec.pt"></div>
+          <div class="field"><label for="login-password">Palavra-passe</label><input id="login-password" type="password" autocomplete="current-password" required placeholder="Introduza a palavra-passe"></div>
+          <p id="login-error" class="form-error" aria-live="polite"></p>
+          <button class="btn btn-primary btn-full" type="submit">Entrar na administração <span aria-hidden="true">↗</span></button>
+        </form>
+        <aside class="access-credentials" aria-labelledby="access-title"><h2 id="access-title">Dados de acesso</h2><p>Utilizador: <code>admin@animalec.pt</code></p><p>Palavra-passe: <code>animalec31</code></p><small></small></aside>
+        <p class="login-foot">Animalec · Administração</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="app-view" class="app-shell" hidden>
+    <aside class="sidebar" id="sidebar" aria-label="Menu lateral">
+      <header class="sidebar-head"><a class="brand" href="#dashboard"><span class="brand-symbol" aria-hidden="true">✺</span><span>animalec<span class="brand-dot">.</span></span></a><p>GESTÃO DE CONTEÚDOS</p></header>
+      <nav class="sidebar-nav" aria-label="Navegação principal">
+        <p class="nav-caption">PAINEL</p>
+        <a href="#dashboard" class="nav-link" data-page="dashboard"><span class="nav-icon" aria-hidden="true">▦</span> Visão geral</a>
+        <p class="nav-caption">CONTEÚDOS</p>
+        <a href="#animais" class="nav-link" data-page="animais"><span class="nav-icon" aria-hidden="true">♧</span> Animais</a>
+        <a href="#utilizadores" class="nav-link" data-page="utilizadores"><span class="nav-icon" aria-hidden="true">♙</span> Utilizadores</a>
+        <a href="#quizzes" class="nav-link" data-page="quizzes"><span class="nav-icon" aria-hidden="true">▤</span> Quizzes</a>
+        <a href="#questoes" class="nav-link" data-page="questoes"><span class="nav-icon" aria-hidden="true">≡</span> Questões</a>
+        <p class="nav-caption">NOVAS ENTIDADES <span class="new-pill">3.1</span></p>
+        <a href="#sponsors" class="nav-link" data-page="sponsors"><span class="nav-icon" aria-hidden="true">♥</span> Patrocinadores <span class="nav-count" id="sidebar-count-sponsors">0</span></a>
+        <a href="#experts" class="nav-link" data-page="experts"><span class="nav-icon" aria-hidden="true">✧</span> Especialistas <span class="nav-count" id="sidebar-count-experts">0</span></a>
+        <p class="nav-caption">PROJETO</p>
+        <a href="docs.html" class="nav-link"><span class="nav-icon" aria-hidden="true">▤</span> Documentação</a>
+        <a href="testes.html" class="nav-link"><span class="nav-icon" aria-hidden="true">✓</span> Testes</a>
+        <a href="design/galeria.html" class="nav-link"><span class="nav-icon" aria-hidden="true">▧</span> Desenhos</a>
+      </nav>
+      <footer class="sidebar-footer"><div class="avatar">AD</div><div class="profile-info"><strong>Administração</strong><span>Gestão de conteúdos</span></div><button id="logout-button" class="logout-button" type="button" title="Terminar sessão" aria-label="Terminar sessão">⎋</button></footer>
+    </aside>
+    <div class="sidebar-overlay" id="sidebar-overlay" hidden></div>
+    <div class="workspace">
+      <header class="topbar"><div class="topbar-left"><button type="button" id="menu-toggle" class="icon-button menu-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Abrir menu">☰</button><a class="topbar-public" href="index.html" title="Página principal do Animalec">Página principal</a><span class="breadcrumb">Animalec <span aria-hidden="true">/</span> <strong id="breadcrumb-title">Visão geral</strong></span></div><div class="topbar-actions"><span class="status-dot"></span><span class="account-label">Administração</span><span class="topbar-avatar" title="Administração">AD</span></div></header>
+      <main id="main-content" tabindex="-1">
+        <div class="page-header"><div><p class="eyebrow" id="page-eyebrow">PAINEL DE ADMINISTRAÇÃO</p><h1 id="page-title">Visão geral</h1><p class="page-subtitle" id="page-subtitle">Acompanhe as entidades do Animalec numa única plataforma.</p></div><div class="header-buttons"><a class="btn btn-secondary" id="main-menu-button" href="#dashboard" hidden>☷ Menu principal</a><button id="add-button" class="btn btn-primary" type="button" hidden>+ <span id="add-button-text">Novo registo</span></button></div></div>
+        <div id="dashboard-content" class="dashboard-content"></div>
+        <section id="entity-content" class="entity-content" hidden aria-labelledby="entity-heading"><div class="book-section-title"><span aria-hidden="true">★</span><p>LISTAGEM E GESTÃO DE REGISTOS</p></div><div class="panel"><div class="panel-toolbar"><div><h2 id="entity-heading">Registos</h2><p id="entity-desc" class="muted">Consulte e organize os registos.</p></div><div class="toolbar-controls"><label class="search-field"><span aria-hidden="true">⌕</span><span class="sr-only">Pesquisar registos</span><input id="search-input" type="search" placeholder="Pesquisar..." aria-label="Pesquisar registos"></label><select id="status-filter" aria-label="Filtrar por estado"><option value="all">Todos os estados</option><option value="Ativo">Ativos</option><option value="Inativo">Inativos</option></select></div></div><div class="table-wrap"><table id="entity-table"><caption class="sr-only">Lista de registos da secção selecionada</caption><thead id="table-head"></thead><tbody id="table-body"></tbody></table></div><div class="mobile-records" id="mobile-records"></div><footer class="panel-footer"><span id="results-count" aria-live="polite">0 registos</span><span>Dados guardados localmente no navegador</span></footer></div></section>
+        <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+      </main>
+      <footer class="workspace-footer">Animalec · Gestão de conteúdos</footer>
+    </div>
+  </div>
+
+  <dialog id="entity-dialog" class="entity-dialog" aria-labelledby="dialog-title">
+    <form id="entity-form" novalidate>
+      <div class="dialog-head"><div><p class="eyebrow">GESTÃO DE REGISTOS</p><h2 id="dialog-title">Novo registo</h2></div><button id="dialog-close" type="button" class="icon-button" aria-label="Fechar formulário">×</button></div>
+      <div id="form-fields" class="form-fields"></div>
+      <p id="form-error" class="form-error" role="alert"></p>
+      <div class="dialog-footer"><button type="button" class="btn btn-secondary" id="dialog-cancel">Cancelar</button><button type="submit" class="btn btn-primary">Guardar registo</button></div>
+    </form>
+  </dialog>
+  <dialog id="view-dialog" class="view-dialog" aria-labelledby="view-title"><div class="dialog-head"><div><p class="eyebrow">FICHA DE REGISTO</p><h2 id="view-title">Consultar registo</h2></div><button id="view-close" class="icon-button" type="button" aria-label="Fechar ficha">×</button></div><div class="view-details" id="view-details"></div><div class="dialog-footer"><button id="view-back" class="btn btn-secondary" type="button">Voltar à listagem</button></div></dialog>
+  <dialog id="confirm-dialog" class="confirm-dialog" aria-labelledby="confirm-title"><div class="dialog-head"><h2 id="confirm-title">Eliminar registo?</h2><button id="confirm-close" class="icon-button" aria-label="Fechar" type="button">×</button></div><p id="confirm-message">Esta ação não pode ser anulada.</p><div class="dialog-footer"><button type="button" id="confirm-cancel" class="btn btn-secondary">Cancelar</button><button type="button" id="confirm-delete" class="btn btn-danger">Eliminar</button></div></dialog>
+</body>
+</html>

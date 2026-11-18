@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animalec — Galeria de prototipagem</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,'Segoe UI',Arial,sans-serif;color:#213d35;background:#f6f8f6}
+    *{box-sizing:border-box}body{margin:0;padding:0}header{background:#173f37;color:white;padding:2rem clamp(1rem,4vw,4rem)}
+    header h1{margin:0;font-size:clamp(1.6rem,3vw,2.6rem)}header p{max-width:800px;color:#d1e4d7}
+    main{max-width:1380px;margin:auto;padding:2rem 1rem 4rem}h2{margin:2rem 0 1rem;font-size:1.6rem}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.3rem}
+    figure{background:white;border:1px solid #dce8e1;padding:1rem;margin:0;border-radius:14px;box-shadow:0 8px 25px #223a2f0b}
+    figure img{max-width:100%;height:350px;width:100%;object-fit:contain;object-position:center top;border:1px solid #e9efea;border-radius:7px;background:#fafafa}
+    figure.mobile img{height:520px}figcaption{font-weight:700;margin:.8rem 0 .1rem}small{color:#687e73}a{color:#276858}header a{color:#ddf4ce}
+    .muted{color:#5f776a}nav{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.5rem}@media(max-width:720px){.gallery{grid-template-columns:1fr}figure img{height:250px}figure.mobile img{height:460px}}
+  </style>
+</head>
+<body>
+<header><h1>Animalec · Galeria da Tarefa 3.1b</h1><p>Comparação visual entre wireframes, mockups e o protótipo HTML5. Os wireframes representam estrutura de baixa fidelidade; os mockups são capturas do protótipo real no navegador.</p><nav aria-label="Ligações principais"><a href="../index.html">Página principal A.2</a><a href="../admin.html">Abrir administração A.3</a><a href="../sponsors.html">Protótipo de patrocinadores</a><a href="../experts.html">Protótipo de especialistas</a><a href="wireframes-editaveis.drawio">Wireframes editáveis (draw.io)</a></nav></header>
+<main>
+  <section aria-labelledby="sponsors-title"><h2 id="sponsors-title">Sponsors — Patrocinadores</h2>
+    <div class="gallery">
+      <figure><a href="wireframes/wireframe-sponsors-desktop.svg"><img src="wireframes/wireframe-sponsors-desktop.svg" alt="Wireframe de desktop para patrocinadores, com menu lateral, pesquisa e listagem tabular"></a><figcaption>Wireframe · Desktop</figcaption><small>Estrutura, componentes e hierarquia</small></figure>
+      <figure><a href="mockups/mockup-sponsors-desktop.png"><img src="mockups/mockup-sponsors-desktop.png" alt="Mockup de desktop para patrocinadores, interface verde com tabela funcional"></a><figcaption>Mockup · Desktop</figcaption><small>Aspeto gráfico do protótipo</small></figure>
+      <figure class="mobile"><a href="wireframes/wireframe-sponsors-mobile.svg"><img src="wireframes/wireframe-sponsors-mobile.svg" alt="Wireframe de mobile para patrocinadores, com cartões verticais"></a><figcaption>Wireframe · Mobile</figcaption><small>Organização de informação para ecrãs pequenos</small></figure>
+      <figure class="mobile"><a href="mockups/mockup-sponsors-mobile.png"><img src="mockups/mockup-sponsors-mobile.png" alt="Mockup mobile de patrocinadores com cartões responsivos"></a><figcaption>Mockup · Mobile</figcaption><small>Apresentação responsiva do protótipo</small></figure>
+    </div>
+  </section>
+  <section aria-labelledby="experts-title"><h2 id="experts-title">Experts — Especialistas científicos</h2>
+    <div class="gallery">
+      <figure><a href="wireframes/wireframe-experts-desktop.svg"><img src="wireframes/wireframe-experts-desktop.svg" alt="Wireframe de desktop para especialistas, com tabela e pesquisa"></a><figcaption>Wireframe · Desktop</figcaption><small>Estrutura, componentes e hierarquia</small></figure>
+      <figure><a href="mockups/mockup-experts-desktop.png"><img src="mockups/mockup-experts-desktop.png" alt="Mockup desktop de especialistas, tabela com instituições e animais associados"></a><figcaption>Mockup · Desktop</figcaption><small>Aspeto gráfico do protótipo</small></figure>
+      <figure class="mobile"><a href="wireframes/wireframe-experts-mobile.svg"><img src="wireframes/wireframe-experts-mobile.svg" alt="Wireframe para mobile de especialistas, cartões individuais e menu adaptado"></a><figcaption>Wireframe · Mobile</figcaption><small>Organização para ecrãs pequenos</small></figure>
+      <figure class="mobile"><a href="mockups/mockup-experts-mobile.png"><img src="mockups/mockup-experts-mobile.png" alt="Mockup mobile de especialistas com cartões e associações a espécies"></a><figcaption>Mockup · Mobile</figcaption><small>Apresentação responsiva do protótipo</small></figure>
+    </div>
+  </section>
+  <p class="muted">Proposta HTML5 autónoma revista à luz dos capítulos A.2 e A.3 do livro. A estrutura de referência é respeitada, mas a tecnologia e o aspeto são próprios do protótipo.</p>
+</main>
+</body>
+</html>
